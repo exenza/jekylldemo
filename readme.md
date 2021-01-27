@@ -1,5 +1,6 @@
 Jekyll demo for AWS \
-Sample CodeBuild build spec with standard CodeBuild image: \
+Sample CodeBuild build spec with standard CodeBuild image:
+
 ```version: 0.1 
 
 phases:
