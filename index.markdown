@@ -4,4 +4,4 @@
 
 layout: home
 ---
-Jekyll AWS Demo
+Jekyll AWS Demo to demonstrate how custom Docker containers can dramatically improve build speed.
