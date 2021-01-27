@@ -14,7 +14,7 @@ phases:
     commands:
       - bundle exec jekyll build
       - aws s3 sync --acl public-read --delete _site/ s3://$DEPLOYBUCKET
-      - aws cloudfront create-invalidation --distribution-id $CFDISTID --paths '/*
+      - aws cloudfront create-invalidation --distribution-id $CFDISTID --paths '/*'
 ```
       
 Build spec for custom docker image:
