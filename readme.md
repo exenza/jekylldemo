@@ -13,3 +13,4 @@ phases:
       - bundle exec jekyll build
       - aws s3 sync --acl public-read --delete _site/ s3://[YOUR_BUCKET_NAME]
       - aws cloudfront create-invalidation --distribution-id [CLOUDFRONT_DIST_ID] --paths '/*'
+     
