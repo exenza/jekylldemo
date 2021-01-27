@@ -66,4 +66,5 @@ You will need correct policy for ECR:
       ]
     }
   ]
-}```
+}
+```
