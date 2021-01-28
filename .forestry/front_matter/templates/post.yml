@@ -11,5 +11,3 @@ fields:
     schema:
       format: markdown
   label: Main
-pages:
-- _posts/test.md
