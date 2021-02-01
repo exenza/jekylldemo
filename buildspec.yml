@@ -5,6 +5,7 @@ phases:
     commands:
       - gem install bundler
       - bundle install
+      - bundle update
   build:
     commands:
       - bundle exec jekyll build
