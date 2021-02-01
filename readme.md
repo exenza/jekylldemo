@@ -1,5 +1,4 @@
 Jekyll demo for AWS \
-\
 
 buildspec.yml to be used with standard CodeBuild image.\
 
