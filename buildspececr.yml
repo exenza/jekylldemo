@@ -1,0 +1,12 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+    - bundle install
+    - bundle update
+  build:
+    commands:
+      - bundle exec jekyll build
+      - aws s3 sync --acl public-read --delete _site/ s3://$DEPLOYBUCKET
+      - aws cloudfront create-invalidation --distribution-id $CFDISTID --paths '/*'
