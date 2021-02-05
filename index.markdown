@@ -10,7 +10,7 @@ This website is served using AWS **Route53** routing to a **Cloudfront** distrib
 
 In order to deploy this website to S3 it will need to be compiled as it's using Jekyll, a Ruby based static website generator.
 
-We can then introduce **CodePipeline** and **CodeBuild** (using a generic Amazon Linux 2) to compile and build our static website:
+We can then introduce **CodeBuild** (using a generic Amazon Linux 2 Docker image) to compile and build our static website:
 
 ![](/uploads/2.png)
 
@@ -22,7 +22,7 @@ Bundler requires a good amount of time to install all the dependencies on top of
 
 Thanks to ECR (Elastic Container Registry) we are going to use a custom Docker with only the Ruby environment installed and pre-configured with Bundler!
 
-The final architecture shown below can build our website in 40seconds, now that is a great improvement!
+The final architecture shown below can build our website in less than a minute, now that is a great improvement!
 
 ![](/uploads/3.png) 
 
