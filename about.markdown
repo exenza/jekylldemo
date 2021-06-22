@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This website is developed and build with Jekyll, last demo was ran on 18/03/2021
+This website is developed and build with Jekyll, last demo was ran on 22/06/2021
 
 You can see the public Git repository used to develop it here:
 [https://github.com/exenza/jekylldemo](https://github.com/exenza/jekylldemo){:target="_blank"}
